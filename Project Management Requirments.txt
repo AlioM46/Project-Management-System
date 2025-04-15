@@ -1,0 +1,43 @@
+Basic Requirements:
+
+[1]: Authentication
+- Login 🟢
+- Register (USE 2FA Email Service)🟢
+- Change Password🟢
+- Reset Password (USE 2FA Email Service)🟢 50% - cuz I just have back-end, where should I send CODE then Validate it?
+- JWT Refresh Token 🟢
+- Authorization (Role Based or Policy is Preferred).
+
+
+
+[2]: Project Management
+- CRUD 🟢
+- Employees Apply to Project (using Application Controller) or Assign Them 🟢
+* so any employee not in the project, cannot be access to this project or it's tasks) 🟢 "Check"
+
+[3]: Task Management
+- CRUD 🟢
+- Comments 🟢
+- Time Tracking (use StartDate and EndDate ) 🟢
+- Employees Apply to Tasks or Assign Them 🟢
+* so any employee not in the project, cannot be access to this project or it's tasks)
+
+
+[4]: Notification System
+- Email Notifications:
+Send email alerts when certain actions occur (e.g., task assignment, deadlines approaching, Status Changes).
+
+
+** Security Requirements **
+Password Hashing: Use strong hashing algorithms (e.g., bcrypt, PBKDF2) for storing user passwords securely. 🟢
+ 
+Authorization: Implement proper authorization checks for different user roles (Admin, Manager, Employee).🟢
+
+JWT Security: Secure your JWT token handling by validating the token, setting expiration times, and using proper signing algorithms (e.g., HMACSHA256).🟢
+
+Rate Limiting: Protect the API from abuse by rate limiting requests.🔴
+
+
+
+
+
